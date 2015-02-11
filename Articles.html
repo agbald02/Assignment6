@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <title>Angular Tutorial</title>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <link href = "css/bootstrap.min.css" rel = "stylesheet">
+                <link href = "A6CSS.css" rel = "stylesheet">
+        </head>
+        <body>
+ 
+                <div class = "navbar navbar-inverse navbar-static-top">
+                        <div class = "container">   
+                                <a href = "https://agbald02.github.io/" target = "_blank" class = "navbar-brand">Andrew Baldridge</a>
+                        </div>
+                </div>
+				<div class = "container">
+				<div class= "row">
+					<div class = "col-lg-9">
+						<div class = "panel panel-default">
+							<div class = panel-body>
+								<div class = "page-header">
+									<h3>Angular Tutorial <small><a href = "https://agbald02.github.io/" target = "_blank">Andrew Baldridge<small></a></h3>
+								</div>
+								<img class = "featureImg" src="Article.jpg" width = "50%">
+								<h1>Welcome to Angular JS!</h1>
+									<p class = "Information">Angular is a great tool to make your websites professional, responsive, and user friendly. Below is a very simple
+									tutorial using code snippets, links, and other references that you can use in order to become familiar with the Angular! For more information
+									on Angular, see the links on the right to get more involved!</p>
+									<br>
+								<h2>Getting Started with Angular</h2>
+									<p>Before you begin, you should already have knowledge of the following:</p>
+										<ul>
+											<li>HTML</li>
+											<li>CSS</li>
+											<li>Javascript</li>
+											<li>JQuery</li>
+										</ul>
+									<p>If you do not yet understand those concepts, there are many examples and other tutorials you can find online. However, if you have an
+									understanding of these concepts, let's continue.</p>
+									<br>
+									<p>In order to use Angular, you first have to reference it within your html document. You can do so by putting the following code in the
+									HEAD section:</p>
+									<pre><code>&ltscript src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"&gt&lt/script&gt</code></pre>
+									<br>
+									<h2>How Angular Works</h2>
+										<h3>Directives</h3>
+											<p>Angular is coupled with HTML by the use of ng-directives.</p>
+											<p>The ng-app directive defines an AngularJS application.</p>
+											<p>The ng-model directive binds the value of HTML controls (input, select, textarea) to application data.</p>
+											<p>The ng-bind directive binds application data to the HTML view.</p>
+											<img src = "DirectivesCode.jpg">
+											<br>
+											<br>
+											<p> In order to make a page HTML5 valid, use "data-ng-" instead of "ng-".</p>
+											<br>
+										<h3>Expressions</h3>
+											<p>AngularJS expressions are written inside double braces: {{ expression }}.</p>
+											<p>AngularJS expressions bind data to HTML the same way as the ng-bind directive.</p>
+											<p>AngularJS will "output" data exactly where the expression is written.</p>
+											<img src = "ExpressionsCode.jpg">
+											<br>
+											<br>
+											<p>You can display an expression in certain formats using a filter in the following way:</p>
+											<pre><code>&ltp My first expression: {{ 5 + 5 }} | currency&gt&lt/p&gt</code></pre>
+											<br>
+											<p>Here is the complete list of formats for expressions:</p>
+											<img src = "ExpressionsFilterCode.jpg" width = "95%">
+											<br>
+										<h3>Controllers</h3>
+											<p>AngularJS applications are controlled by controllers.</p>
+											<p>The ng-controller directive defines the controller.</p>
+											<p>The controller code will execute when the page loads.</p>
+											<img src = "ControllersCode.jpg">
+									
+									
+									
+									
+									
+									
+							</div>
+						</div>
+					</div>
+					<div class = "col-lg-3">
+							<div class = "list-group">
+								<a href = "http://www.angularjs.org" target="_blank" class = "list-group-item">
+									<h4 class = "list-group-item-heading">AngularJS Site</h4>
+								</a>
+								<a href = "http://angularbootcamp.com/?gclid=CIilgPnL2sMCFUk2gQodyHoAVA" class = "list-group-item">
+									<h4 class = "list-group-item-heading">Angular Boot Camp</h4>
+									<p>held by Oasis Digital</p>
+								</a>
+								<a href = "http://campus.codeschool.com/courses/shaping-up-with-angular-js/intro" target="_blank" class = "list-group-item">
+									<h4 class = "list-group-item-heading">Code School</h4>
+									<p>FULL Angular Tutorial</p>
+								</a>
+								<a href = "Index.html" target="_blank" class = "list-group-item">
+									<h4 class = "list-group-item-heading">More Angular Tutorials</h4>
+									<p>Tutorial Library</p>
+								</a>
+							</div>
+						</div>
+				</div>
+				</div>
+				<div class = "navbar navbar-inverse navbar-static-bottom">
+					<div class = "container">
+						<p class = "navbar-text">Andrew Baldridge</p>
+					</div>
+				</div>
+				
+                <script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+                <script src = "js/bootstrap.js"></script>
+               
+        </body>
+</html>
