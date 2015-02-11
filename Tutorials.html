@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	
+	 <script data-require="angular.js@*" data-semver="1.2.0-rc3-nonmin" src="http://code.angularjs.org/1.2.0-rc.3/angular.js"></script>
+    <script data-require="ng-table@*" data-semver="0.3.1" src="http://bazalt-cms.com/assets/ng-table/0.3.1/ng-table.js"></script>
+    <script src="SortFilter.js"></script>
+	
+    <link data-require="ng-table@*" data-semver="0.3.1" rel="stylesheet" href="http://bazalt-cms.com/assets/ng-table/0.3.1/ng-table.css" />
+    <link data-require="bootstrap-css@*" data-semver="3.0.0" rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1">
+	
+</head>
+<body ng-app = "main">
+    <div ng-controller="AngAssn6">
+		<h2>Tutorials Index
+        <button ng-click="tableParams.sorting({})" class="btn btn-default pull-right">Clear sorting</button>
+        <button ng-click="tableParams.filter({})" class="btn btn-default pull-right">Clear filter</button>
+		</h2>
+		
+        <table ng-table="tableParams" show-filter="true" class="table">
+            <tr ng-repeat="object in $data">
+                <td data-title="'Title'" sortable="'title'" filter="{ 'title': 'text' }">
+                    {{object.title}}
+                </td>
+				<td data-title="'URL'" sortable="'url'" filter="{ 'url': 'text' }">
+                    <a href ="{{object.url}}">{{object.url}}</a>
+                </td>
+				<td data-title="'Author'" sortable="'author'" filter="{ 'author': 'text' }">
+                    {{object.author}}
+                </td>
+				<td data-title="'Image'" sortable="'image'" filter="{ 'image': 'text' }">
+                    <img ng-src = '{{object.image}}'>
+                </td>	
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
